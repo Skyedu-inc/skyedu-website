@@ -23,3 +23,13 @@
     "typescript": "5.2.2"
   }
 }
+{
+  "dependencies": {
+    "next": "13.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@splinetool/react-spline": "latest",
+    "@splinetool/runtime": "latest",
+    "lucide-react": "latest"
+  }
+}
