@@ -50,7 +50,7 @@ export default async function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
           <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-semibold text-sm mb-6">
-              🚀 2026 말레이시아 국제학교 단기 스쿨링 모집 중
+              🚀 2026 말레이시아 어학원, 국제학교 단기 스쿨링 모집 중
             </div>
             <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
               글로벌 교육의 <br className="hidden lg:block" />
