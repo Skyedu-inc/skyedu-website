@@ -5,7 +5,7 @@ import React from 'react';
 // -----------------------------------------------------------
 async function getNotionData() {
   const NOTION_API_KEY = "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"; 
-  const DATABASE_ID = "072d4c1684bc4b3088042f6c857ec2f9";
+  const DATABASE_ID = "6e46a48a-2c09-4440-abc4-6bc7d0aec972";
 
   try {
     const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, {
