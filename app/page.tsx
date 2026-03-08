@@ -1,11 +1,18 @@
 import React from 'react';
 
 // -----------------------------------------------------------
-// 1. 노션 데이터 가져오기 (StackBlitz 에러 방지용으로 수정됨)
+// 1. 노션 데이터 가져오기 (환경변수 보안 적용)
 // -----------------------------------------------------------
 async function getNotionData() {
-  const NOTION_API_KEY = "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"; 
-  const DATABASE_ID = "6e46a48a-2c09-4440-abc4-6bc7d0aec972";
+  // ✅ 보안 적용: 실제 키를 직접 적지 않고 넷플리파이 설정값(env)을 불러옵니다.
+  const NOTION_API_KEY = process.env.NOTION_API_KEY; 
+  const DATABASE_ID = process.env.NOTION_DATABASE_ID;
+
+  // 키가 설정되지 않았을 경우 에러 방지
+  if (!NOTION_API_KEY || !DATABASE_ID) {
+    console.error("환경변수가 설정되지 않았습니다.");
+    return [];
+  }
 
   try {
     const res = await fetch(`https://api.notion.com/v1/databases/${DATABASE_ID}/query`, {
