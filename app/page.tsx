@@ -15,8 +15,8 @@ async function getNotionData() {
         'Notion-Version': '2022-06-28',
         'Content-Type': 'application/json',
       },
-      // 스택블리츠 충돌의 주범이었던 next: { revalidate: 10 } 를 지우고 아래 설정으로 바꿉니다.
-      cache: 'no-store' 
+      // 넷플리파이에서 가장 확실하게 실시간 데이터를 갱신하는 설정입니다.
+      next: { revalidate: 0 } 
     });
 
     if (!res.ok) {
